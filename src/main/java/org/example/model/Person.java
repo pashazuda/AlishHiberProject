@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Cascade;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -28,6 +30,16 @@ public class Person {
     @Column(name = "age")
     private int age;
 
+
     @OneToMany(mappedBy = "owner")
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<Item> items;
+
+    public void addItem(Item item) {
+        if (this.items == null) {
+            this.items = new ArrayList<Item>();
+        }
+        this.items.add(item);
+        item.setOwner(this);
+    }
 }

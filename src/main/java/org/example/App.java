@@ -23,37 +23,16 @@ public class App
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.getCurrentSession();
         session.beginTransaction();
-//        Person person = session.get(Person.class, 3);
-//        List<Item> items = person.getItems();
-//        System.out.println(items.size());
 
-//        Person person = session.get(Person.class, 2);
-//        Item item = new Item("UnitMask", person);
-//        session.save(item);
-//        person.getItems().add(item);
+        Person person = new Person("Oleginaasv", 44);
+        person.addItem(new Item("OlegItem1", person));
+        person.addItem(new Item("OlegItem2", person));
+        person.addItem(new Item("OlegItem3", person));
 
-//        Person nowar = new Person("Nowar", 12);
-//        Item mask228 = new Item("UnitMask228", nowar);
-//        nowar.setItems(new ArrayList<>(Collections.singletonList(mask228)));
-//        session.save(nowar);
-//        session.save(mask228);
+//        person.setItems(new ArrayList<>(Collections.singletonList(item)));
+        session.save(person);
 
-//        Person person = session.get(Person.class, 3);
-//        List<Item> items = person.getItems();
-//        for (Item item : items) {
-//            session.remove(item);
-//        }
-//        person.getItems().clear();
 
-//        Person person = session.get(Person.class, 2);
-//        session.remove(person);
-//        person.getItems().forEach(item -> item.setOwner(null));
-
-        Person person = session.get(Person.class, 4);
-        Item item = session.get(Item.class, 1);
-        item.getOwner().getItems().remove(item);
-        item.setOwner(person);
-        person.getItems().add(item);
         session.getTransaction().commit();
     }
 
