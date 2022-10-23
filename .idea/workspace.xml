@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4efceba-1431-490e-abb6-062147fda6ce" name="Changes" comment="One to Many">
+    <list default="true" id="e4efceba-1431-490e-abb6-062147fda6ce" name="Changes" comment="Каскадирование">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Passport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a84419c-280d-4fd3-b308-16a34b9d2203.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0a84419c-280d-4fd3-b308-16a34b9d2203.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a84419c-280d-4fd3-b308-16a34b9d2203/storage_v2/_src_/database/hibernate_demo_db.bVH-1A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0a84419c-280d-4fd3-b308-16a34b9d2203/storage_v2/_src_/database/hibernate_demo_db.bVH-1A/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" afterDir="false" />
@@ -95,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666436124262</updated>
       <workItem from="1666436126152" duration="3524000" />
-      <workItem from="1666440100962" duration="8905000" />
+      <workItem from="1666440100962" duration="12297000" />
     </task>
     <task id="LOCAL-00001" summary="HQL">
       <created>1666444550154</created>
@@ -111,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666454818899</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Каскадирование">
+      <created>1666456388143</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666456388143</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HQL" />
     <MESSAGE value="One to Many" />
-    <option name="LAST_COMMIT_MESSAGE" value="One to Many" />
+    <MESSAGE value="Каскадирование" />
+    <option name="LAST_COMMIT_MESSAGE" value="Каскадирование" />
   </component>
 </project>
